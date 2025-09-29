@@ -1,0 +1,11 @@
+<div>
+  <h2>Tutti i Post</h2>
+  <ul class="list-group">
+    <li *ngFor="let post of posts" class="list-group-item">
+      <a [routerLink]="['/post', post.id]">
+        <h4>{{ post.title }}</h4>
+      </a>
+      <p>di {{ post.author }}</p>
+    </li>
+  </ul>
+</div>

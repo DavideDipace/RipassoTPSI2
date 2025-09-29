@@ -1,0 +1,9 @@
+<div *ngIf="post; else notFound">
+  <h2>{{ post.title }}</h2>
+  <p><em>di {{ post.author }}</em></p>
+  <p>{{ post.content }}</p>
+</div>
+
+<ng-template #notFound>
+  <div class="alert alert-warning">Post non trovato!</div>
+</ng-template>
